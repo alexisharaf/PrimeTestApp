@@ -14,9 +14,9 @@ namespace PrimeTestApp
 
             starttime = DateTime.Now;
 
-           for (int i = 2; i < 1000000; i++)
+           //for (int i = 2; i < 1000000; i++)
 
-           // Parallel.For(2, 1000000, i =>
+            Parallel.For(2, 1000000, i =>
             {
                 isprime = true;
                 for (int j = 2; j < i; j++)
@@ -35,7 +35,7 @@ namespace PrimeTestApp
                     Console.WriteLine(i);
                 }
             }
-           //);
+           );
 
             endtime = DateTime.Now;
 
